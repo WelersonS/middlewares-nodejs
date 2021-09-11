@@ -189,7 +189,7 @@ describe('Todos', () => {
 
     expect(listResponse.body).toEqual([]);
   });
-
+  
   it('should not be able to delete a non existing todo', async () => {
     const userResponse = await request(app)
       .post('/users')
